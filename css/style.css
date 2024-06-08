@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+body {
+  background-color: rgb(21, 151, 184);
+}
+
+.info {
+  width: 1200px;
+  height: auto;
+  margin: 50px auto 150px;
+}
+
+.info__ava {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.info__header {
+  display: flex;
+  align-items: center;
+}
+
+.info__me {
+  height: 400px;
+  background-color: white;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info__me p {
+  font-size: 25px;
+  color: grey;
+}
+
+.info__links {
+  margin-top: 50px;
+  align-self: flex-end;
+  margin-right: 30px;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.info__works {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  list-style: none;
+}
+
+.info__work {
+  width: 360px;
+  height: 380px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.info__work:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.info__work-img {
+  border-radius: 10px 10px 0 0;
+}
+
+.info__work p {
+  font-size: 15px;
+  color: grey;
+  margin-left: 20px;
+}
+
+.info__work-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 20px;
+}
+
+.info__social-img {
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info__contacts {
+  color: white;
+}
+
+.info__contacts p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.info__text {
+  margin-bottom: 20px;
+}
+
+.info__contact {
+  display: flex;
+}
+
+.info__contact-img {
+  margin-right: 10px;
+}
+
+.info__img {
+  width: 800px;
+  height: 500px;
+  object-fit: cover;
+}
+
+a:hover {
+  animation: bounce 1s;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
